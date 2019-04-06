@@ -1,4 +1,4 @@
-aimport unittest
+import unittest
 from lab1 import *
 
  # A few test cases.  Add more!!!
@@ -9,6 +9,16 @@ class TestLab1(unittest.TestCase):
         tlist = None
         with self.assertRaises(ValueError):  # used to check for exception
             max_list_iter(tlist)
+
+        list1 = [2, 5, 10, -12, 0]
+        list2 = [4, 100, 100, 9, 10]
+        list3 = [1, 1, 1, 1, 1]
+        list4 = []
+
+        self.assertEqual(max_list_iter(list1), 10)
+        self.assertEqual(max_list_iter(list2), 100)
+        self.assertEqual(max_list_iter(list3), 1)
+        self.assertEqual(max_list_iter(list4), None)
 
     def test_reverse_rec(self):
         self.assertEqual(reverse_rec([1,2,3]),[3,2,1])
