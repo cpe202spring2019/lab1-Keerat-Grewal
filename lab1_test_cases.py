@@ -11,7 +11,7 @@ class TestLab1(unittest.TestCase):
             max_list_iter(tlist)
 
         list1 = [2, 5, 10, -12, 0]
-        list2 = [4, 100, 100, 9, 10]
+        list2 = [4, 200, 200, 9, 10]
         list3 = [1, 1, 1, 1, 1]
         list4 = []
 
