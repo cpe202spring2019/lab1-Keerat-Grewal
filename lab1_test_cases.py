@@ -95,6 +95,7 @@ class TestLab1(unittest.TestCase):
         list_val5 = [5, 8, 10, 23, 90, 102, 202]
         list_val6 = [1, 5]
         list_val7 = [2]
+        list_val8 = [1, 3, 4, 7, 8, 10, 11, 29, 30, 35, 41, 50, 58, 90, 100, 102, 111]
 
         self.assertEqual(bin_search(4, 0, len(list_val) - 1, list_val), 4)
         self.assertEqual(bin_search(19, 0, len(list_val2) - 1, list_val2), 5)
@@ -106,6 +107,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(bin_search(102, 2, 5, list_val5), 5)
         self.assertEqual(bin_search(1, 0, 1, list_val6), 0)
         self.assertEqual(bin_search(2, 0, 0, list_val7), 0)
+        self.assertEqual(bin_search(58, 0, len(list_val8) - 1, list_val8), 12)
 
 
 if __name__ == "__main__":
