@@ -66,7 +66,9 @@ class TestLab1(unittest.TestCase):
     def test_bin_search_empty_list(self):
         """this tests the bin_search function if the list is empty"""
         list_val = []
+        list_val2 = []
         self.assertEqual(bin_search(10, 0, 1, list_val), None)
+        self.assertEqual(bin_search(0, 0, len(list_val2) - 1, list_val2), None)
 
     def test_bin_search_no_value(self):
         """this tests the bin_search function if the target is not in the list"""
