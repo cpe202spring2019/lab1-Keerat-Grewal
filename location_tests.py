@@ -25,14 +25,14 @@ class TestLab1(unittest.TestCase):
         loc8 = loc4
         loc9 = Location("Sacramento", 40.0, -90.0)
 
-        self.assertEqual(loc4 == loc5, False)
-        self.assertEqual(loc4 == loc5, False)
-        self.assertEqual(loc7 == loc4, False)
-        self.assertEqual(loc4 == loc7, False)
-        self.assertEqual(loc4 == loc5, False)
-        self.assertEqual(loc5 == loc9, True)
-        self.assertEqual(loc4 == loc8, True)
-        self.assertEqual(loc6 == loc5, False)
+        self.assertFalse(loc4 == loc5)
+        self.assertFalse(loc4 == loc5)
+        self.assertFalse(loc7 == loc4)
+        self.assertFalse(loc4 == loc7)
+        self.assertFalse(loc4 == loc5)
+        self.assertTrue(loc5 == loc9)
+        self.assertTrue(loc4 == loc8)
+        self.assertFalse(loc6 == loc5)
 
 
 if __name__ == "__main__":
